@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+a{
+    text-decoration-line: none;
+}
+a:hover{
+    background-color: rgb(252, 116, 62);
+    padding: 1rem;
+    border-radius: 8px/4px;
+}
+.navbar-brand{
+    font:900 3rem Cursive;
+    color: white;
+}
+.list-item{
+    color: white;
+    font:1.5rem sans-serif;
+    text-transform: uppercase;
+    margin-right: 1em;
+}
+.carousel{
+    overflow: hidden;
+    width: 90vw;
+    margin: 2px auto;
+}
+figure{
+    position: relative;
+    height: 70vh;
+    width: 500%;
+    animation: 20s carousel infinite;
+}
+.carousel figure img{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    height: fit-content;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 1em;
+    margin:50px auto;
+}
+.wrapper img{
+    height: fit-content;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    width: 100%;
+}
+
+@keyframes carousel {
+    0% {
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+ .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+	 .fixed-footer{
+        bottom: 0;
+    }  
+
+
+
+</style>
+
+<body bgcolor="">
+
+    <nav class="navbar">
+
+        <a href="#" class="navbar-brand">MotorVilla</a>
+        <div class="navContainer">
+            <ul class="nav-list">
+                <li><a href="#" class="list-item">Home</a></li>
+                <li><a href="#" class="list-item">Services</a></li>
+                <li><a href="#" class="list-item">Order</a></li>
+                <li><a href="#" class="list-item">Menu</a></li>
+                <li><a href="#" class="list-item">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel">
+        <figure>
+            <img src="https://www.bmw-motorrad.ca/content/dam/bmwmotorradnsc/common/multiimages/images/models/sport/r1250rs/farbupdates2020/R1250RS_P0ND2_mulitimage_original_2560x1440.jpg.asset.1622465782990.jpg"alt="">
+            <img src= "https://www.drivespark.com/images/2018-11/2019-bmw-r-1250-r-14.jpg"Alt="">
+            <img src= "https://www.bikesrepublic.com/wp-content/uploads/2020/04/2020-kawasaki-ninja-zx-25r-carbon-fibre-race-bike-one-make-race-8-696x464.jpg"alt="">
+            <img src= "https://wallpapercave.com/wp/wp6604318.jpg"alt="">
+            <img src= "https://i.pinimg.com/originals/30/cb/3d/30cb3d118b437ab38c099f43d02033bf.jpg"alt="">
+        </figure>
+    </div>
+    <div class="main-container">
+        <div class="wrapper">
+            <div class="img">
+                <img src="https://wallpapercave.com/wp/wp4277985.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>BMW </h4>
+                <p>Price:2.5lakhs-15lakh</p>
+                <p>The R 1250 R is designed for a dynamic appearance.
+				Equipped with the all-new Boxer engine – with a maximum torque of 105 lb-ft,
+				the reworked engine delivers more power than ever.</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="img">
+                <img src="https://wallpapercave.com/wp/wp7043057.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>Roadster Bike</h4>
+                <p>Price:5lakh-15lakh</p>
+                <p>A roadster is a particular category of motorcycle from the naked bike family. Many mistake roadsters as streetfighters and vice-versa, but there is a clear difference between these two categories of motorcycles even though they are mechanically very similar.
+
+</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="img">
+                <img src="https://cdn.statically.io/img/i.pinimg.com/originals/84/86/76/848676e2f596bb2d696b8fbd9f96609c.jpg" alt="">
+            </div>
+            <div class="text">
+                <h4>Custom Bike</h4>
+                <p>Price:2lakh-15lakh</p>
+                <p>Updated bikes are vehicles that have improved appearance or purpose. There are a number of reasons 
+				why many motorcyclists choose to change their motorcycles.</p>
+            </div>
+        </div>
+    </div>
+	<div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 MotorVilla</div>        
+    </div>
+
+
+</body>
+
+</html>
